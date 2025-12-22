@@ -1,5 +1,5 @@
 # Odin + OpenGL + SDL3 template
-`Heavily Based of Karl Zylinski hot reload examples with [odin+raylib](https://github.com/karl-zylinski/odin-raylib-hot-reload-game-template) and [odin+sokol](https://github.com/karl-zylinski/odin-sokol-hot-reload-template)`
+Heavily Based of Karl Zylinski hot reload examples with [odin+raylib](https://github.com/karl-zylinski/odin-raylib-hot-reload-game-template) and [odin+sokol](https://github.com/karl-zylinski/odin-sokol-hot-reload-template)
 
 This is an [Odin](https://github.com/odin-lang/Odin) + Opengl and SDL3. It makes it possible to reload gameplay code while the game is running.
 
