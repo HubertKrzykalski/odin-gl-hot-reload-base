@@ -2,8 +2,7 @@
 This file is the starting point of your game.
 
 Some important procedures are:
-- game_init_window: Opens the window
-- game_init: Sets up the game state
+- game_init: Opens the window and sets up the game state
 - game_update: Run once per frame
 - game_should_close: For stopping your game when close button is pressed
 - game_shutdown: Shuts down game and frees memory
