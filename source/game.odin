@@ -29,9 +29,11 @@ package game
 
 import "core:fmt"
 
-import sdl "vendor:sdl3"
-import	gl "vendor:OpenGL"
-import glm "core:math/linalg/glsl"
+import sdl 	"vendor:sdl3"
+import	gl 	"vendor:OpenGL"
+import glm  "core:math/linalg/glsl"
+ 
+
 
 
 Game_Memory :: struct {
@@ -74,7 +76,7 @@ draw :: proc() {
 	transform: glm.mat4 = 1
 	transform *= glm.mat4Translate({0.0, -0.0, 0.0})
 	time := f32(sdl.GetPerformanceCounter()) /
-        f32(sdl.GetPerformanceFrequency())
+     f32(sdl.GetPerformanceFrequency())
 	transform *= glm.mat4Rotate({0, 0, 1}, time*1)
 
 	gl.Clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)
@@ -86,7 +88,6 @@ draw :: proc() {
 	gl.BindVertexArray(g.vao)
 	gl.DrawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, nil)
 
-
 	sdl.GL_SwapWindow(g.window)
 }
 
@@ -94,6 +95,7 @@ draw :: proc() {
 game_update :: proc() {
 	draw()
 	update()
+
 
 	// Everything on tracking allocator is valid until end-of-frame.
 	free_all(context.temp_allocator)

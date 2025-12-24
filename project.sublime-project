@@ -10,10 +10,11 @@
 		{
 			// This makes sublime able to jump to build errors.
 			"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
+
 			
 			"name": "Odin",
             "linux": {
-                "cmd": ["/home/hubert/Odin/odin", "run", ".", "-debug"],
+                "cmd": ["run", ".", "-debug"],
             },
             "windows": {
                 "cmd": ["odin", "run", ".", "-debug"],
