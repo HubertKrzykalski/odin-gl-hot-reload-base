@@ -168,7 +168,7 @@ def build_release():
 		extra_args += " -debug"
 
 	execute("odin build source/main_release -out:%s -strict-style -vet %s" % (exe, extra_args))
-	shutil.copytree("assets", out_dir + "/assets")
+
 
 	return exe
 

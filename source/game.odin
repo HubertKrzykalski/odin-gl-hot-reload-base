@@ -19,8 +19,8 @@ also used in order to facilitate the hot reload functionality:
 - game_hot_reloaded: Run after a hot reload so that the `g` global
 	variable can be set to whatever pointer it was in the old DLL.
 
-NOTE: When compiled as part of `build_release`, `build_debug` or `build_web`
-then this whole package is just treated as a normal Odin package. No DLL is
+NOTE: When compiled as part of `build_release`, `build_debug` or then 
+this whole package is just treated as a normal Odin package. No DLL is
 created.
 */
 
@@ -114,7 +114,7 @@ game_init :: proc() {
 
 	g = new(Game_Memory)
 	g.run = true
-	g.window = sdl.CreateWindow("LearningOpengl", 800, 600, {.HIGH_PIXEL_DENSITY, .OPENGL, .RESIZABLE, .ALWAYS_ON_TOP})
+	g.window = sdl.CreateWindow("LearningOpengl", 800, 600, {.HIGH_PIXEL_DENSITY, .OPENGL, .RESIZABLE})
 	if g.window == nil{
 		fmt.panicf("sdl.CreateWindow error: ", sdl.GetError())
 	}

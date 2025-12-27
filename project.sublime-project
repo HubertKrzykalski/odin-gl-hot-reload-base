@@ -30,7 +30,7 @@
 				{
 				"name": "Release",
 				"working_dir": "$project_path",
-				"shell_cmd": "python3 build.py -hot-reload -run -debug",
+				"shell_cmd": "python3 build.py -release -run -debug",
 				},
 			]
 		}
