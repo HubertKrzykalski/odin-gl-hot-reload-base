@@ -14,7 +14,7 @@
 			
 			"name": "Odin",
             "linux": {
-                "cmd": ["run", ".", "-debug"],
+                "cmd": ["odin","run", ".", "-debug"],
             },
             "windows": {
                 "cmd": ["odin", "run", ".", "-debug"],
